@@ -10,9 +10,9 @@ function RenderComments() {
         setIsHidden(!isHidden) 
     }
 
-    const allComments = video.comments.map(post => {
+    const allComments = video.comments.map(comment => {
         return (
-            <Comment name = {post.user}  comment={post.comment}/>
+            <Comment name = {comment.user}  comment={comment.comment}/>
             );
     })
     return (
